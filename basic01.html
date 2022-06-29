@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LEARN BASIC HTML</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="" href="https://i.pinimg.com/474x/2e/3b/a2/2e3ba2252b694ba32023fb48283f3fb3.jpg">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- CTRL + / to write command line -->
+        <!-- Header -->
+        <header>
+            <img style="margin-top: 5px;" src="https://i.pinimg.com/originals/56/20/6a/56206a5646ee2140166aef591e52da64.png" alt="W3Schools.com" width="300" height="200" usemap="#logo-cute">
+            <h2 id="name_store">WONDER STORE</h2>
+        </header>
+        <map name="logo-cute">
+            <area shape="rect" 
+            coords="34,44,270,350" 
+            alt="logo02"
+            href="https://online.visual-paradigm.com/repository/images/60da5213-0238-406c-a9c2-19eaf1160cb9/logos-design/cute-teddy-logo-created-for-beauty-products-company.png">
+        </map>
+
+        <section>
+            <nav>
+              <ul>
+                <li>
+                    <button type="button" onclick="feel(1)">Music</button>
+                    <div>
+                        <audio controls>
+                            <source id="music" src="" type="audio/mpeg">
+                           </audio>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="cafe" onclick="feel(2)">Cafe</a>
+                   
+                </li>
+                <li>
+                    <a href="#" id="chill" onclick="feel(3)">Chill</a>
+                </li>
+              </ul>
+            </nav>
+        <!-- /Header -->
+        <article>
+        <p><em><abbr title="tadaaaaaa">Have Fun!</abbr></em></p>
+        <a id="click_btn">CLICK HERE</a>
+        <p>You can learn more about HTML at: <a id="link_href" href="https://www.w3schools.com" target="_blank">W3SCHOOLS</a></p> 
+        <table id="table_st">
+            <caption><b style="font-size: 20px;">Item Table</b></caption>
+            <tr>
+                <th>Book's Name</th>
+                <th>Category</th>
+                <th>Author</th>
+            </tr>
+            <tr>
+                <td>Flowers</td>
+                <td>Natural</td>
+                <td>Helen</td>
+            </tr>
+            <tr>
+                <td>Animals</td>
+                <td>Natural</td>
+                <td>Hita</td>
+            </tr>
+        </table>
+
+        <!-- Div & Span -->
+        <p>Everything you need I will give <span style="color: #F2789F"> YAY! </span>, Enjoy your day!</p>
+
+        <!-- iframe -->
+        <!-- <iframe src="https://www.w3schools.com/html/html_iframe.asp" height="50" width="300">Iframe</iframe><br> -->
+
+        <!-- Test function -->
+        <button id="test_func" type="button" onclick="ting()">Click me to get suprise!</button>
+        <div id="test_func_2"></div>
+
+        <!-- Test turn on/off the light -->
+        <p style="font-size: 20px;">Let's tell me your feeling today!</p>
+        <img id="face_img" src="/images/transparent-smiley-blush-emoticon-emotion-icon-5de830249a3797.8727383715754977646317.jpg" width="100" height="100">
+        <button type="button" onclick="face(1)" style="background-color: #E7FBBE;">GOOD</button>
+        <button type="button" onclick="face(0)" style="background-color: #D9D7F1;">BAD</button>
+    </article>
+    </section>
+        <script>
+            function ting(){
+                document.getElementById("test_func_2").append(`Tada, Suprise!!`);
+            }
+            function face(t){
+                var pic;
+                if(t==0){
+                    pic = "/images/images.png";
+                }else{
+                    pic = "/images/transparent-smiley-blush-emoticon-emotion-icon-5de830249a3797.8727383715754977646317.jpg";
+                }
+                document.getElementById("face_img").src = pic;
+            }
+            function feel(a){
+                if(a==1){   
+                    let p = `<audio controls>
+                                <source src="/music/NiemVuiCuaEm-ChanLaCa-6721057.mp3" type="audio/mpeg">
+                               </audio>`;
+                    document.getElementById("music").src('/music/NiemVuiCuaEm-ChanLaCa-6721057.mp3');
+                }else if(a==2){
+                    document.getElementById("cafe").href('');
+                }else{
+                    document.getElementById("chill").href('');
+                }
+            }
+        </script>
+    </body>
+</html>

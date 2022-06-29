@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+  }
+
+header {
+    background-color: #FEE3EC;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+#name_store{
+    color: #FBA1A1; 
+    font-size: 30px; 
+    background-color: aquamarine; 
+    width: 300px;
+    text-align: center; 
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid powderblue;
+    margin-left: 41.75%;
+}
+
+nav {
+    float: left;
+    width: 30%;
+    height: 600px; /* only for demonstration, should be removed */
+    background: #F3F0D7;
+    padding: 20px;
+  }
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #FDEFEF;
+    height: 600px; /* only for demonstration, should be removed */
+  }
+
+  /* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+a:link{
+    color: #377D71;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: #FF9F29;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: #8879B0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a:active{
+    color: #00FFAB;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+#click_btn{
+    background-color: #FF5D5D;
+    padding: 15px 20px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+}
+
+#click_btn:hover{
+    background-color: #00FFAB;
+}
+
+
+#table_st{
+    border: 1px solid black;
+    width: 20%;
+}
+th, td{
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #DDD;
+
+}
+/* tr:nth-child(even) {
+    background-color: #D6EEEE;
+} */
+tr:hover {background-color: #D6EEEE;}
+
+#test_func{
+    background-color: #85F4FF;
+    width: 250px; 
+    font-size: 20px;
+}
+#test_func_2{
+    color: white;
+    background-color: #FD5D5D;
+    width: 200px;
+    font-size: 20px;
+}
+
