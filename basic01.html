@@ -4,6 +4,8 @@
         <title>LEARN BASIC HTML</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="" href="https://i.pinimg.com/474x/2e/3b/a2/2e3ba2252b694ba32023fb48283f3fb3.jpg">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
@@ -11,7 +13,7 @@
         <!-- Header -->
         <header>
             <img style="margin-top: 5px;" src="https://i.pinimg.com/originals/56/20/6a/56206a5646ee2140166aef591e52da64.png" alt="W3Schools.com" width="300" height="200" usemap="#logo-cute">
-            <h2 id="name_store">WONDER STORE</h2>
+            <h2 id="name_store"><i class="fas fa-heart"></i>WONDER STORE<i class="fas fa-heart"></i></h2>
         </header>
         <map name="logo-cute">
             <area shape="rect" 
@@ -19,7 +21,7 @@
             alt="logo02"
             href="https://online.visual-paradigm.com/repository/images/60da5213-0238-406c-a9c2-19eaf1160cb9/logos-design/cute-teddy-logo-created-for-beauty-products-company.png">
         </map>
-
+        <!-- /Header -->
         <section>
             <nav>
               <ul>
@@ -27,20 +29,32 @@
                     <button type="button" onclick="feel(1)">Music</button>
                     <div>
                         <audio controls>
-                            <source id="music" src="" type="audio/mpeg">
-                           </audio>
+                            <source id="music" src="/music/NiemVuiCuaEm-ChanLaCa-6721057.mp3" type="audio/mpeg">
+                        </audio>
                     </div>
                 </li>
                 <li>
                     <a href="#" id="cafe" onclick="feel(2)">Cafe</a>
-                   
                 </li>
                 <li>
                     <a href="#" id="chill" onclick="feel(3)">Chill</a>
                 </li>
               </ul>
+
+              <div class="box-set">
+                <figure class="box">
+                    <img class="img_box" src="/images/index.jpeg">
+                </figure>
+                <figure class="box">
+                    <img class="img_box" src="/images/artworks-VOMHSlvoxLTYP40h-g9CYSg-t500x500.jpg">
+                </figure>
+                <figure class="box">
+                    <img class="img_box" src="/images/5449866.jpg">
+                </figure>
+              </div>
             </nav>
-        <!-- /Header -->
+
+              <!-- Advanced HTML -->
         <article>
         <p><em><abbr title="tadaaaaaa">Have Fun!</abbr></em></p>
         <a id="click_btn">CLICK HERE</a>
@@ -81,6 +95,8 @@
         <button type="button" onclick="face(0)" style="background-color: #D9D7F1;">BAD</button>
     </article>
     </section>
+
+    <footer>FOOTER HERE</footer>
         <script>
             function ting(){
                 document.getElementById("test_func_2").append(`Tada, Suprise!!`);
@@ -96,16 +112,15 @@
             }
             function feel(a){
                 if(a==1){   
-                    let p = `<audio controls>
-                                <source src="/music/NiemVuiCuaEm-ChanLaCa-6721057.mp3" type="audio/mpeg">
-                               </audio>`;
                     document.getElementById("music").src('/music/NiemVuiCuaEm-ChanLaCa-6721057.mp3');
                 }else if(a==2){
                     document.getElementById("cafe").href('');
+
                 }else{
                     document.getElementById("chill").href('');
                 }
             }
         </script>
+
     </body>
 </html>

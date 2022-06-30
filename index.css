@@ -9,21 +9,44 @@ header {
     color: white;
   }
 
+  h2 {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+  }
+  h2::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: aquamarine;
+    transition: .25s;
+  }
+
+  h2:hover::before {
+    width: 100%;
+  }
+
 #name_store{
-    color: #FBA1A1; 
-    font-size: 30px; 
-    background-color: aquamarine; 
-    width: 300px;
+    color: #b4a1fb; 
+    font-size: 40px; 
     text-align: center; 
-    font-family: 'Courier New', Courier, monospace;
-    border: 2px solid powderblue;
-    margin-left: 41.75%;
+    /* font-family: 'Courier New', Courier, monospace;     */
+    font-family: "Trirong", serif;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 3px #ababab;
 }
 
 nav {
     float: left;
     width: 30%;
-    height: 600px; /* only for demonstration, should be removed */
+    height: 600px; 
     background: #F3F0D7;
     padding: 20px;
   }
@@ -39,7 +62,8 @@ nav ul {
     padding: 20px;
     width: 70%;
     background-color: #FDEFEF;
-    height: 600px; /* only for demonstration, should be removed */
+    height: 600px; 
+    padding-bottom: 10px;
   }
 
   /* Clear floats after the columns */
@@ -111,3 +135,39 @@ tr:hover {background-color: #D6EEEE;}
     font-size: 20px;
 }
 
+.box-set{
+    width: 400px;
+    display: flex;
+    height: 100px;
+    
+}
+
+.box {
+    color: white;
+    text-align: center;
+    width: 50%;
+    box-shadow: 0 15px 20px #29f8ff;
+    border-radius: 10px;
+    overflow: hidden;
+    float: left;
+  }
+
+  .img_box{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  footer{
+    margin-top: 5px;
+    background-color: #b4a1fb;
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+  /* .box:nth-child(2) {
+    position: absolute;
+    top: 20px;
+  } */
